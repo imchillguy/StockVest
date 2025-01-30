@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="stockDetailsViewModel"
+            type="com.chillguy.stockvest.viewmodel.StocksChartDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/stocks_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/stocks_icon_iv"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:id="@+id/stocks_info_symbol_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_semi_bold"
+                tools:text="ACES"
+                android:textColor="@color/black_80"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/stocks_icon_iv"
+                android:layout_marginStart="16dp"
+                />
+
+            <TextView
+                android:id="@+id/stocks_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/inter_regular"
+                tools:text="Ace Hardware"
+                android:textColor="@color/black_50"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/stocks_icon_iv"
+                android:layout_below="@id/stocks_info_symbol_tv"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/stocks_symbol_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stocks_info_rl"
+            android:text="@{stockDetailsViewModel.stocksSymbol}"
+            tools:text="IHSG"
+            />
+
+        <TextView
+            android:id="@+id/stocks_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:layout_marginTop="5dp"
+            android:text="@{stockDetailsViewModel.stocksPrice}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stocks_symbol_tv"
+            tools:text="7.056,04"
+            />
+
+        <TextView
+            android:id="@+id/stocks_price_change_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/claret_50"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="@{stockDetailsViewModel.stocksPriceChange}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stocks_price_tv"
+            tools:text="-35.72 (-0.50%)"
+            />
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stocks_category_rv"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@id/stocks_price_tv"
+            app:layout_constraintTop_toTopOf="@id/stocks_price_tv"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.db.williamchart.view.LineChartView
+            android:id="@+id/stocks_chart_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:chart_smoothLine="true"
+            app:chart_axis="none"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="10dp"
+            app:chart_lineColor="@color/claret_50"
+            app:chart_lineThickness="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stocks_price_change_tv"
+            />
+
+        <com.chillguy.stockvest.customview.FilterOptionsView
+            android:id="@+id/stocks_chart_timeframe_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:type="separator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stocks_chart_view"
+            android:layout_marginTop="20dp"/>
+
+        <com.chillguy.stockvest.customview.StocksPriceLotView
+            android:id="@+id/stocks_price_lot_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:viewType="nameBold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stocks_chart_timeframe_filter"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

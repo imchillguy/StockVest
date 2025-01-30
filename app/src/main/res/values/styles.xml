@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <style name="StockVestTextInputStyle" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxBackgroundColor">@null</item>
+        <item name="android:textColorHint">@color/black_60</item>
+        <item name="hintEnabled">false</item>
+        <item name="cursorColor">@color/black_80</item>
+    </style>
+
+    <style name="StockVestTextInputEditTextStyle" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/black_80</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:background">@drawable/filled_round_rect_black_20</item>
+        <item name="hintTextColor">@color/black_60</item>
+    </style>
+
+    <style name="StockVestGreenFilledButtonStyle" parent="StockVestFilledButtonTextStyle">
+        <item name="android:textColor">@color/black_80</item>
+        <item name="android:background">@drawable/filled_round_rect_khaki_green_50</item>
+    </style>
+
+    <style name="StockVestGreenRedButtonStyle" parent="StockVestFilledButtonTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/filled_round_rect_red_50</item>
+    </style>
+
+    <style name="StockVestFilledButtonTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+    </style>
+
+    <style name="StockVestOutlinedButtonStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black_80</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter_semi_bold</item>
+        <item name="android:background">@drawable/outlined_round_rect_khaki_green_50</item>
+    </style>
+
+    <style name="StockVestHelperTextStyle" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

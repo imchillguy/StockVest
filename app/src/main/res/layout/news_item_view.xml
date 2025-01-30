@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/news_image"
+        android:layout_marginEnd="40dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/black_80"
+        tools:text="News Title "/>
+    
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:foregroundGravity="center"
+        app:layout_constraintTop_toTopOf="@id/news_title"
+        app:layout_constraintBottom_toBottomOf="@id/news_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    
+
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/news_title"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/black_50"
+        tools:text="5:39 AM"/>
+
+    <View
+        android:id="@+id/dot_view"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="6dp"
+        android:foregroundGravity="center"
+        android:background="@drawable/circle_black_80"
+        android:backgroundTint="@color/black_50"
+        app:layout_constraintStart_toEndOf="@id/news_time"
+        app:layout_constraintTop_toTopOf="@id/news_time"
+        app:layout_constraintBottom_toBottomOf="@id/news_time"/>
+
+    <TextView
+        android:id="@+id/news_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/dot_view"
+        app:layout_constraintTop_toTopOf="@id/dot_view"
+        app:layout_constraintBottom_toBottomOf="@id/dot_view"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/black_50"
+        tools:text="Investor Daily"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

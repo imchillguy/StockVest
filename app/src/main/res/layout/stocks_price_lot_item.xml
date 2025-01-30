@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/stocks_price_lot_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Open"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="12sp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/stocks_price_lot_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7.091,76"
+        android:layout_gravity="end"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>

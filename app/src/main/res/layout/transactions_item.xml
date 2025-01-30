@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="16dp"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/stocks_icon_iv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stocks_symbol_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ACES"
+            android:textColor="@color/black_80"
+            android:textSize="12sp"
+            android:fontFamily="@font/inter_semi_bold"/>
+
+
+        <TextView
+            android:id="@+id/stocks_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="$68"
+            android:textColor="@color/black_80"
+            android:textSize="12sp"
+            android:fontFamily="@font/inter_regular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stocks_lot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1 Lot"
+            android:textColor="@color/black_80"
+            android:textSize="12sp"
+            android:fontFamily="@font/inter_regular"/>
+
+
+        <TextView
+            android:id="@+id/stocks_total_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="$68"
+            android:textColor="@color/black_80"
+            android:textSize="12sp"
+            android:fontFamily="@font/inter_regular"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stocks_transaction_status_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        tools:text="Open"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter_semi_bold" />
+
+</LinearLayout>

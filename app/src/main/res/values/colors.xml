@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="khaki_green_80">#7D8729</color>
+    <color name="khaki_green_60">#CFDF43</color>
+    <color name="khaki_green_50">#E5F64A</color>
+    <color name="khaki_green_40">#E9F76E</color>
+    <color name="khaki_green_20">#F3FAAC</color>
+
+    <color name="claret_80">#7B0B2A</color>
+    <color name="claret_60">#CC1245</color>
+    <color name="claret_50">#EC255C</color>
+    <color name="claret_40">#E64370</color>
+    <color name="claret_20">#F193AD</color>
+
+    <color name="red_80">#883A35</color>
+    <color name="red_60">#E16058</color>
+    <color name="red_50">#F76961</color>
+    <color name="red_40">#F98781</color>
+    <color name="red_20">#FBBAB6</color>
+
+    <color name="green_80">#2C714B</color>
+    <color name="green_60">#49BB7D</color>
+    <color name="green_50">#50CD89</color>
+    <color name="green_40">#73D7A1</color>
+    <color name="green_20">#AFE8C9</color>
+
+    <color name="black_80">#2E3032</color>
+    <color name="black_60">#5C5E61</color>
+    <color name="black_50">#8C8F93</color>
+    <color name="black_40">#B1B5BA</color>
+    <color name="black_20">#D9DDE3</color>
+
+    <color name="black_50_alpha_60">#608C8F93</color>
+    <color name="black_50_alpha_15">#158C8F93</color>
+    <color name="color_f9f9f9">#F9F9F9</color>
+    <color name="khaki_green_50_alpha_70">#70E5F64A</color>
+    <color name="color_eeeeee">#EEEEEE</color>
+
+</resources>

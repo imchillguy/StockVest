@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/filter_options_root"
+    android:background="@drawable/filled_round_rect_black_20_radius_10"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="6dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <TextView
+        android:id="@+id/filter_options_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="12sp"
+        android:gravity="center"
+        tools:text="Filter"
+        />
+
+</LinearLayout>

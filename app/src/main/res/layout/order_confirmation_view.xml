@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="30dp"
+        android:background="@drawable/modal_round_top">
+
+        <TextView
+            android:id="@+id/order_confirmation_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/order_confirmation" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/cross_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:id="@+id/stocks_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/order_confirmation_tv">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/stocks_icon_iv"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/stocks_info_symbol_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_semi_bold"
+                tools:text="ACES"
+                android:textColor="@color/black_80"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/stocks_icon_iv"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/stocks_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/inter_regular"
+                tools:text="Ace Hardware"
+                android:textColor="@color/black_50"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/stocks_icon_iv"
+                android:layout_below="@id/stocks_info_symbol_tv" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stocks_info_rl"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/filled_round_rect_grey">
+
+            <TextView
+                android:id="@+id/order_lot_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="12sp"
+                android:textColor="@color/black_80"
+                android:text="@string/buy_order_lot" />
+
+            <TextView
+                android:id="@+id/order_lot_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="12sp"
+                tools:text="8 Lot"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="12sp"
+                android:layout_below="@id/order_lot_tv"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black_80"
+                android:text="@string/price" />
+
+            <TextView
+                android:id="@+id/price_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/order_lot_value_tv"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                tools:text="8 Lot"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/investment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="12sp"
+                android:layout_below="@id/price_tv"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black_80"
+                android:text="@string/investment" />
+
+            <TextView
+                android:id="@+id/investment_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/price_value_tv"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                tools:text="8 Lot"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/investment_tv"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/vertical_divider_line"
+                android:backgroundTint="@color/black_50_alpha_15" />
+
+            <TextView
+                android:id="@+id/broker_fee_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:layout_below="@id/divider_line"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/black_80"
+                android:text="@string/broker_fee" />
+
+            <TextView
+                android:id="@+id/broker_fee_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/divider_line"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                tools:text="8 Lot"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/exchange_fee_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="12sp"
+                android:layout_below="@id/broker_fee_tv"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black_80"
+                android:text="@string/exchange_fee" />
+
+            <TextView
+                android:id="@+id/exchange_fee_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/broker_fee_tv"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                tools:text="8 Lot"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/payment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semi_bold"
+                android:textSize="12sp"
+                android:layout_below="@id/exchange_fee_tv"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/red_50"
+                android:text="@string/payment" />
+
+            <TextView
+                android:id="@+id/payment_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_semi_bold"
+                android:layout_below="@id/exchange_fee_tv"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                tools:text="8 Lot"
+                android:textColor="@color/red_50" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/order_cancel_or_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_details"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                style="@style/StockVestOutlinedButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/confirm_button_btn"
+                style="@style/StockVestGreenFilledButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/confirm"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

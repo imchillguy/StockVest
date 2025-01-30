@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_selector"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/watchlist"
+        android:icon="@drawable/watchlist_selector"
+        android:title="@string/watchlist"/>
+
+    <item
+        android:id="@+id/portfolio"
+        android:icon="@drawable/portfolio_selector"
+        android:title="@string/portfolio"/>
+
+    <item
+        android:id="@+id/transactions"
+        android:icon="@drawable/transactions_selector"
+        android:title="@string/transactions"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_selector"
+        android:title="@string/profile"/>
+
+</menu>

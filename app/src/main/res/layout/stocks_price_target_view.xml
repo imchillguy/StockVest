@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/current_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                tools:text="Current $570"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/white"
+                android:background="@drawable/filled_rount_rect_black_80_radius_10" />
+
+            <TextView
+                android:id="@+id/target_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                tools:text="Target $811"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/filled_rount_rect_green_50_radius_10"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter_regular" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/current_price_line_view"
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:background="@drawable/line_black_80" />
+
+            <View
+                android:id="@+id/target_price_line_view"
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:background="@drawable/line_green_50" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/price_scale_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filled_round_rect_black_20_radius_10">
+
+            <View
+                android:id="@+id/current_price_circle_view"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_black_80" />
+
+            <View
+                android:id="@+id/target_price_circle_view"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_green_50" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/low_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_80"
+                android:textSize="12sp"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/inter_medium"
+                tools:text="Low $550" />
+
+            <TextView
+                android:id="@+id/high_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_80"
+                android:textSize="12sp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/inter_medium"
+                tools:text="High 1150" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

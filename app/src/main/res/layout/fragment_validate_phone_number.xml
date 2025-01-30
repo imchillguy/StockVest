@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="registrationViewModel"
+            type="com.chillguy.stockvest.viewmodel.RegistrationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/logo_iv"
+            app:layout_constraintTop_toTopOf="@id/logo_iv" />
+
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/validate_phone_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:fontFamily="@font/inter_extra_bold"
+            android:text="@string/validate_phone_number"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo_iv" />
+
+        <TextView
+            android:id="@+id/otp_to_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/otp_to_your_phone_number"
+            android:textColor="@color/black_60"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/validate_phone_number_tv" />
+        
+        <LinearLayout
+            android:id="@+id/otp_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/otp_to_number"
+            >
+            <EditText
+                android:id="@+id/otp_box_1"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_weight="1"
+                android:text="@={registrationViewModel.otpBox1}"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black_80"
+                android:textSize="32sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/otp_box_2"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_weight="1"
+                android:text="@={registrationViewModel.otpBox2}"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black_80"
+                android:textSize="32sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/otp_box_3"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_weight="1"
+                android:text="@={registrationViewModel.otpBox3}"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black_80"
+                android:textSize="32sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/otp_box_4"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:text="@={registrationViewModel.otpBox4}"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black_80"
+                android:textSize="32sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/verify_btn"
+            style="@style/StockVestGreenFilledButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingVertical="16dp"
+            android:text="@string/verify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/otp_boxes" />
+
+        <TextView
+            android:id="@+id/not_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/could_not_received"
+            android:textColor="@color/black_60"
+            android:layout_marginTop="30dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/verify_btn" />
+
+        <TextView
+            android:id="@+id/resend_or_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/resend_or_change_number"
+            android:textColor="@color/black_60"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/not_received" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

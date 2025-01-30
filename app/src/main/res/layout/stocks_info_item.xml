@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/stocks_iv"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@color/black_80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/stocks_symbol_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@id/stocks_price_tv"
+        app:layout_constraintStart_toEndOf="@id/stocks_iv"
+        app:layout_constraintTop_toTopOf="@id/stocks_iv"
+        tools:text="GOTO"
+        android:textColor="@color/black_80"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/stocks_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxWidth="220dp"
+        app:layout_constraintStart_toStartOf="@id/stocks_symbol_tv"
+        app:layout_constraintTop_toBottomOf="@id/stocks_symbol_tv"
+        tools:text="GoTo Gojek Tokopedia"
+        android:textColor="@color/black_60"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/stocks_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stocks_symbol_tv"
+        tools:text="198"
+        android:textColor="@color/black_80"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/stocks_price_change_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/stocks_price_tv"
+        app:layout_constraintTop_toBottomOf="@id/stocks_price_tv"
+        tools:text="+1 (+0.53%)"
+        android:textColor="@color/black_60"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="12sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
