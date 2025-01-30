@@ -11,17 +11,10 @@ Welcome to **StockVest**, a stock market simulation tool that helps users make i
 
 ## 📷 Demo
 
-![Demo 1](./screenshots/stockvest-app-demo.gif)
-
-![Demo 2](./screenshots/stockvest-registration-demo.gif)
-
-## 📂 Installation
-To set up StockVest locally, follow these steps:
-
-```sh
-# Clone the repository
-git clone https://github.com/imchillguy/StockVest.git
-```
+<div style="display: flex; flex-direction: row;">
+  <img src="screenshots/stockvest-app-demo.gif" style="width: 200px; height: 400px;">
+  <img src="screenshots/stockvest-registration-demo.gif" style="width: 200px; height: 400px;">
+</div>
 
 ## 🎯 Usage
 1. Start the application and log in or create a profile.
@@ -31,6 +24,16 @@ git clone https://github.com/imchillguy/StockVest.git
 
 ## 📷 Screenshots
 
-![Screenshot 1](./screenshots/home_page.png) ![Screenshot 2](./screenshots/stocks_analysis.png) ![Screenshot 3](./screenshots/stocks_news.png) ![Screenshot 4](./screenshots/stocks_orderbbok.png)
+<div style="display: flex; flex-direction: row;">
+  <img src="screenshots/home_page.png" style="width: 200px; height: 400px;">
+  <img src="screenshots/stocks_analysis.png" style="width: 200px; height: 400px;">
+  <img src="screenshots/stocks_news.png" style="width: 200px; height: 400px;">
+  <img src="screenshots/stocks_orderbbok.png" style="width: 200px; height: 400px;">
+</div>
 
-![Screenshot 5](./screenshots/stocks_buy.png) ![Screenshot 6](./screenshots/transactions.png) ![Screenshot 7](./screenshots/watchlist.png) ![Screenshot 8](./screenshots/profile.png)
+<div style="display: flex; flex-direction: row;">
+  <img src="screenshots/stocks_buy.png" style="width: 200px; height: 400px;">
+  <img src="screenshots/transactions.png" style="width: 200px; height: 400px;">
+  <img src="screenshots/watchlist.png" style="width: 200px; height: 400px;">
+  <img src="screenshots/profile.png" style="width: 200px; height: 400px;">
+</div>
