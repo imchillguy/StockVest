@@ -1,4 +1,4 @@
-<img src="screenshots/stockvest_logo.png" style="width: 800px; height: 200px;">
+<img src="screenshots/stockvest_logo.png" style="width: 800px height: 200px">
 
 # 📈 StockVest - Smart Stock Investment Simulator
 
