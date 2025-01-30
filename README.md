@@ -1,3 +1,5 @@
+<img src="screenshots/stockvest_logo.png" style="width: 800px; height: 200px;">
+
 # 📈 StockVest - Smart Stock Investment Simulator
 
 Welcome to **StockVest**, a stock market simulation tool that helps users make informed investment decisions. Whether you're a beginner looking to learn the basics or an experienced investor testing strategies, StockVest provides a realistic and data-driven experience.
