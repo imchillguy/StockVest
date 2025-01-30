@@ -9,15 +9,18 @@ Welcome to **StockVest**, a stock market simulation tool that helps users make i
 - 📡 **News & Sentiment Analysis** – Stay informed with relevant market news.
 - 🛠 **User-friendly Interface** – Simple, intuitive design for seamless trading.
 
+## 📷 Demo
+
+![Demo 1](./screenshots/stockvest-app-demo.mov)
+
+![Demo 2](./screenshots/stockvest-registration-demo.mov)
+
 ## 📂 Installation
 To set up StockVest locally, follow these steps:
 
 ```sh
 # Clone the repository
 git clone https://github.com/imchillguy/StockVest.git
-
-# Navigate to the project directory
-cd StockVest
 ```
 
 ## 🎯 Usage
@@ -28,26 +31,6 @@ cd StockVest
 
 ## 📷 Screenshots
 
-### Screenshot 1
-![Screenshot 1](./screenshots/Screenshot%202025-01-30%20at%207.51.12%E2%80%AFPM.png)
+![Screenshot 1](./screenshots/home_page.png) ![Screenshot 2](./screenshots/stocks_analysis.png) ![Screenshot 3](./screenshots/stocks_news.png) ![Screenshot 4](./screenshots/stocks_orderbbok.png)
 
-### Screenshot 2
-![Screenshot 2](./screenshots/Screenshot%202025-01-30%20at%207.51.21%E2%80%AFPM.png)
-
-### Screenshot 3
-![Screenshot 3](./screenshots/Screenshot%202025-01-30%20at%207.51.25%E2%80%AFPM.png)
-
-### Screenshot 4
-![Screenshot 4](./screenshots/Screenshot%202025-01-30%20at%207.51.38%E2%80%AFPM.png)
-
-### Screenshot 5
-![Screenshot 5](./screenshots/Screenshot%202025-01-30%20at%207.51.44%E2%80%AFPM.png)
-
-### Screenshot 6
-![Screenshot 6](./screenshots/Screenshot%202025-01-30%20at%207.51.54%E2%80%AFPM.png)
-
-### Screenshot 7
-![Screenshot 7](./screenshots/Screenshot%202025-01-30%20at%207.51.58%E2%80%AFPM.png)
-
-### Screenshot 8
-![Screenshot 8](./screenshots/Screenshot%202025-01-30%20at%207.52.04%E2%80%AFPM.png)
+![Screenshot 5](./screenshots/stocks_buy.png) ![Screenshot 6](./screenshots/transactions.png) ![Screenshot 7](./screenshots/watchlist.png) ![Screenshot 8](./screenshots/profile.png)
