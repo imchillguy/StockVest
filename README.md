@@ -11,9 +11,9 @@ Welcome to **StockVest**, a stock market simulation tool that helps users make i
 
 ## 📷 Demo
 
-![Demo 1](./screenshots/stockvest-app-demo.mov)
+![Demo 1](./screenshots/stockvest-app-demo.gif)
 
-![Demo 2](./screenshots/stockvest-registration-demo.mov)
+![Demo 2](./screenshots/stockvest-registration-demo.gif)
 
 ## 📂 Installation
 To set up StockVest locally, follow these steps:
